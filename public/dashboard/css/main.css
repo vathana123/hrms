@@ -1,0 +1,293 @@
+.form-design-sidebar nav ul li {
+    padding: 5px 2px;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.form-design-sidebar nav ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.form-design-sidebar nav ul li:hover {
+    background-color: #021d4928;
+}
+
+.request-form {
+    background-color: white;
+}
+
+.request-form *,
+.approval-printing * {
+    color: #000;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.approval-printing * {
+    text-align: center;
+}
+
+.request-form label {
+    font-weight: normal !important;
+    margin: 0;
+    padding-left: 12px;
+    display: flex;
+    align-items: center;
+    height: inherit;
+}
+
+.request-form label span {
+    color: red;
+}
+
+.request-form label input {
+    margin-right: 4px;
+}
+
+.request-form input,
+.request-form textarea,
+.request-form select {
+    margin: 0;
+    border: none;
+    outline: none;
+    width: 100%;
+    min-height: 28px;
+}
+
+.request-form table tbody tr td input[type="number"] {
+    text-align: end;
+}
+
+.request-form input[type="number"] {
+    text-align: end;
+}
+
+.form-item {
+    border: 1px solid #eee;
+    transition: box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+}
+
+.form-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#preview {
+    width: 150px;
+    height: 100px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+}
+
+.table-responsive thead {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: var(--solid-background-fill-color-tertiary);
+}
+
+
+.approval-line {
+    position: relative;
+    width: 100%;
+    border: solid 1px var(--control-stroke-color-default);
+    background-color: var(--control-fill-color-default);
+    padding: 16px;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.approval-line .approval-remark {
+    border: solid 1px var(--control-stroke-color-default);
+    background-color: var(--solid-background-fill-color-base);
+    padding: 4px 24px;
+
+    width: 300px;
+    /* ✅ use width instead of max-width */
+
+    position: absolute;
+    top: 20%;
+    right: 120px;
+
+    backdrop-filter: blur(8px);
+    border-radius: 8px;
+    display: none;
+    box-shadow: 0px 8px 24px var(--smoke-fill-color-default);
+}
+
+.approval-line:hover .approval-remark {
+    display: block;
+}
+
+.qpage-header {
+    gap: 12px;
+}
+
+.qpage-title {
+    min-width: 0;
+}
+
+.qpage-title h4 {
+    margin: 0;
+    overflow-wrap: anywhere;
+}
+
+.qpage-actions {
+    flex-shrink: 0;
+}
+
+.qpagination-summary {
+    gap: 12px;
+}
+
+.qtoolbar {
+    gap: 12px;
+}
+
+.qtoolbar form,
+.qtoolbar-fields {
+    gap: 8px;
+}
+
+.qtoolbar-label {
+    gap: 6px;
+}
+
+.qtoolbar-search {
+    width: 160px;
+}
+
+.qdetail-list {
+    display: grid;
+    gap: 12px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.qdetail-list li {
+    display: grid;
+    gap: 4px;
+}
+
+.qdetail-label {
+    color: var(--text-fill-color-secondary);
+    font-size: 12px;
+}
+
+.qdetail-value {
+    overflow-wrap: anywhere;
+}
+
+.qempty-state {
+    margin: 0;
+}
+
+.qform-designer-grid {
+    row-gap: 12px;
+}
+
+.qform-designer-sidebar nav {
+    border: solid 1px var(--control-stroke-color-default);
+    border-radius: 8px;
+    background-color: var(--control-fill-color-default);
+}
+
+.qform-designer-canvas {
+    min-height: 500px;
+    resize: vertical;
+}
+
+.qcode-area {
+    font-family: Consolas, Monaco, monospace;
+}
+
+.qcontent-card {
+    overflow-wrap: anywhere;
+}
+
+.qstatus-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 2px 6px;
+    line-height: 1.4;
+}
+
+.qapproval-stack {
+    display: grid;
+    gap: 4px;
+}
+
+.qapproval-card-inner {
+    gap: 12px;
+}
+
+.qperson {
+    min-width: 0;
+}
+
+.qperson h5 {
+    overflow-wrap: anywhere;
+}
+
+.qperson-avatar {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+
+.qapproval-actions {
+    flex-wrap: wrap;
+}
+
+.qrequest-form-card {
+    overflow-x: auto;
+}
+
+.qpopup-content.qpopup-wide {
+    width: min(880px, calc(100vw - 32px));
+    max-width: min(880px, calc(100vw - 32px));
+}
+
+.qpopup-content.qpopup-wide .qpopup-body {
+    max-height: min(68vh, 620px);
+    overflow-y: auto;
+}
+
+@media (max-width: 767.98px) {
+    .qpage-header,
+    .qpagination-summary,
+    .qtoolbar,
+    .qapproval-card-inner {
+        align-items: stretch !important;
+        flex-direction: column;
+    }
+
+    .qpage-actions {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .qtoolbar form,
+    .qtoolbar-fields {
+        align-items: stretch !important;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .qtoolbar .qbtn,
+    .qtoolbar .qform {
+        width: 100%;
+    }
+
+    .qpage-actions .qbtn {
+        justify-content: center;
+    }
+
+    .qapproval-card-inner .text-end {
+        text-align: start !important;
+    }
+}
